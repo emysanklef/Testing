@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: work 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--ink);
+    background: rgb(81, 100, 97);
+    line-height: 1.6;
+    font-weight: 400;
+}   
+.header{
+    background: var(--amber);
+    color: var(--paper);
+    text-align: center;
+    padding: 2.5rem 1rem;
+} 
+.header h1{
+    margin: 0 0 0.5rem 0;
+    font-size: 70px;
+    color: var(--charcoal);
+}
+.header p{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: bold;
+}
+.container{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.policy-section{
+    background: var(--paper);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.policy-section:hover{
+    transform: translateY(-13px);box-shadow: var(--shadow);
+    transition: background 0.35s ease,  transform 0.35s ease; 
+    transform: scale(1.06);
+}
+.policy-section h2{
+    font-size: 70px;
+    border-bottom: 2px solid var(--line);
+    margin-top: 0;
+    color: var(--charcoal);
+    padding-bottom: 0.5rem;
+}
+.policy-section p.updated{
+    font-size: 30px;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: var(--amber);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.policy-section h3{
+    font-size: 30px;
+    color: #777;
+    margin-bottom: 0.12rem;
+}
+p{
+    font-size: 23px;
+    margin-bottom: 70px;
+}
+.footer{
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--charcoal);
+    color: var(--paper);
+    font-weight: 800;
+}

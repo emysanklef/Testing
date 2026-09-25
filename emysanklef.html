@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember &amp; Oak Lodge - Stay Among the Pines</title>
+    <link rel="stylesheet" href="css/emysanklef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root{
+            --charcoal:#1b1815;
+            --forest:#2e3b30;
+            --forest-dark:#212b23;
+            --cream:#f5f0e6;
+            --paper:#fbf8f2;
+            --amber:#c98a3e;
+            --amber-light:#e2ac6b;
+            --rust:#8a4632;
+            --ink:#2a251f;
+            --ink-soft:#5c5347;
+            --line:#dcd3c2;
+            --radius:24px;
+            --shadow: 0 20px 50px rgba(20, 16, 10, 0.18);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="brand"><i class="fa-solid fa-mountain-sun"></i> Ember &amp; Oak</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="emysanklef.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+        
+        <div class="nav-cta">
+            <a href="booking.html" class="btn btn-ghost">Sign In</a> 
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->      
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <a class="eyebrow"> Nestled in the Whistlepine Valley</a>
+            <h1>Rest deeper. <em>Wander further.</em></h1>
+            <p>Ember &amp; Oak Lodge blends timber-and-hearth comfort with the quiet of the pines - twenty-two rooms, a slow morning kitchen, and a valley that never runs out of trails.</p>
+            <div class="hero-actions">
+                <a href="rooms.html" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Check Availability</a>
+                <a href="about.html" class="btn btn-ghost" style="color: #040404;background-color: var(--amber);font-size: 20px;"><i class="fa-solid fa-circle-play"></i> Our Story</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating booking widget -->
+    <div class="book-widget reveal" id="quickBook">
+        <div class="book-field">
+            <label>Check-in</label>
+            <input type="date" id="qCheckin">
+        </div>
+        <div class="book-field">
+            <label>Check-out</label>
+            <input type="date" id="qCheckout">
+        </div>
+        <div class="book-field">
+            <label>Guests</label>
+            <select id="qGuests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+            </select>
+        </div>
+        <div class="book-field">
+            <label>Room Type</label>
+            <select id="qRoom">
+                <option value="hearth">Hearth Room - $129</option>
+                <option value="vale">Vale Suit - $189</option>
+                <option value="canopy">Canopy Loft - $259</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" id="quickBookBtn"><i class="fa-solid fa-magnifying-glass"></i> Check Rates</button>
+    </div>
+
+    <!-- STATS -->
+    <div class="stat-trip reveal">
+        <div class="stat"><span class="num">22🛏️</span><span class="label">Rooms &amp; Suites</span></div>
+        <div class="stat"><span class="num">4.9⭐⭐</span><span class="label">Average Guest Rating</span></div>
+        <div class="stat"><span class="num">14🤝</span><span class="label">Years Welcoming Guests</span></div>
+        <div class="stat"><span class="num">6📌</span><span class="label">Trailheads Nearby</span></div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testi-section">
+        <div class="section-head reveal">
+            <p class="eyebrow">Guest notes</p>
+            <h2>What people say after checkout</h2>
+        </div>
+        <div class="testi-wrap reveal">
+            <div class="testi-card">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p>Front desk remembered our dog's name on day two.<br>Breakfast alone is worth the drive up the valley.</p>
+                <div class="testi-person">
+                    <div class="testi-avatar">D 🧔🏻‍♂️</div>
+                    <div><strong>Deshawn K.</strong><span>Stayed July 2026</span></div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                <p>The Canopy Loft tub with the treetop view is not an exaggeration in the photos. <br>Booking process was painless too.</p>
+                <div class="testi-person">
+                    <div class="testi-avatar">M 👩🏻‍🦰</div>
+                    <div><strong>Mei L.</strong><span>Stayed July 2026</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <div class="cta-strip">
+        <div class="cta-inner">
+            <h2>Still deciding? The valley isn't going anywhere.</h2>
+            <p>Save your dates now - rooms during peak trail season book out weeks in advance.</p>
+            <a href="booking.html" class="btn btn-primary"><i class="fa-solid fa-calendar-check"> Start My Booking</i></a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="emysanklef.html" class="brand"><i class="fa-solid fa-mountain-sun"></i> Ember &amp; Oak</a>
+                <p>A twenty-two room lodge in the Whistlepine Valley, built for guests who'd rather hear a creek than a highway.</p>
+                <div class="social-row">
+                    <a href="https://instagram.com/emberoakhotel" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com/emberoakhotel" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/emberoakhotel" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://tiktok.com/emberoakhotel" target="_blank" rel="noopener" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://pinterest.com/emberoakhotel" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <span  class="social-handle">@emberoakhotel on every platform</span>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="about.html">About the Lodge</a>
+                    <a href="rooms.html">Rooms &amp; Suites</a>
+                    <a href="amenities.html">Amenities</a>
+                    <a href="faq.html">FAQs</a></li>
+                    <a href="booking.html">Book a Stay</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> 118 Whistlepine Trail, Cascade Hollow</li>
+                    <li><i class="fa-solid fa-phone"></i> (+1) 555 214 7790</li>
+                    <li><i class="fa-solid fa-envelope"></i> stay@emberoaklodge.com</li>
+                    <li><i class="fa-solid fa-clock"></i> Front desk open 24 hours</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Trail updates, seasonal offers, and first access to new rooms - a few emails a year, nothing more.</p>
+                <form id="newsform" style="display: flex; gap: 0;margin-top: 6px;">
+                    <input type="email" required placeholder="you@example.com" style="flex: 1;padding: 12px 14px;border: 1px solid rgba(245, 240, 230, 0.2);background: rgba(245, 240, 230, 0.06);color: var(--cream);border-radius: 2px 0 0 2px;outline: none;font-size: 20px;">
+                    <button class="btn btn-primary" style="border-radius: 0 2px 2px 0;padding: 12px 18px;"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Ember &amp; Oak Lodge. All rights reserved.</span>
+            <span><a href="t&c.html">Privacy Policy & Terms of stay</a></span>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root{
+            --charcoal:#1b1815;
+            --forest:#2e3b30;
+            --forest-dark:#212b23;
+            --cream:#f5f0e6;
+            --paper:#fbf8f2;
+            --amber:#c98a3e;
+            --amber-light:#e2ac6b;
+            --rust:#8a4632;
+            --ink:#2a251f;
+            --ink-soft:#5c5347;
+            --line:#dcd3c2;
+            --radius:24px;
+            --shadow: 0 20px 50px rgba(20, 16, 10, 0.18);
+        }
+    </style>
+</head>
+<body>
+    <section class="section" id="rooms">
+        <div class="section-head reveal">
+            <P class="eyebrow">Rooms &amp; Suites</P>
+            <h2>Pick your corner of the valley</h2>
+            <p>Every room rate includes breakfast, free wi-fi, and parking. Select a room below to carry it straight into your booking form.</p>
+        </div>
+        <div class="rooms-wrap reveal">
+            <div class="room-card" data-room="hearth" data-price="129" data-name="Hearth Room">
+                <div class="room-media">
+                    <span class="room-tag">Most Booked</span>
+                    <img src="images/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg">
+                </div>
+                <div class="room-body">
+                    <h3>Hearth Room</h3>
+                    <p>Cosy queen room with a wood stove, garden view, <br>and a reading book by the window.</p>
+                    <div class="room-feats">
+                        <span><i class="fa-solid fa-user"></i> 2 Guests</span>
+                        <span><i class="fa-solid fa-bed"></i> Queen Bed</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 24 M²</span>
+                    </div>
+                    <div class="room-footer">
+                        <div class="room-price">$129 <span>/ night</span></div>
+                        <a href="booking.html" class="room-select-btn" onclick="selectRoom('hearth',129,'Hearth Room')">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card" data-room="vale" data-price="189" data-name="Vale Suite">
+                <div class="room-media">
+                    <span class="room-tag">Best Value</span>
+                    <img src="images/bangkok-thailand-august-12-2016-beautiful-luxury-bedroom-int.jpg">
+                </div>
+                <div class="room-body">
+                    <h3>Vale Suite</h3>
+                    <p>A king suite with a private balcony facing the creek, <br>plus a small sitting area.</p>
+                    <div class="room-feats">
+                        <span><i class="fa-solid fa-user"></i> 3 Guests</span>
+                        <span><i class="fa-solid fa-bed"></i> King Bed</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 32 M²</span>
+                    </div>
+                    <div class="room-footer">
+                        <div class="room-price">$189 <span>/ night</span></div>
+                        <a href="booking.html" class="room-select-btn" onclick="selectRoom('vale',189,'Vale Suit')">Select</a>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card" data-room="canopy" data-price="259" data-name="Canopy Loft">
+                <div class="room-media">
+                    <span class="room-tag">Top Floor</span>
+                    <img src="images/ariel-nathan-ada-mbita-MPQ__ty5PD0-unsplash.jpg">
+                </div>
+                <div class="room-body">
+                    <h3>Canopy Loft</h3>
+                    <p>Vaulted ceilings, a soaking tube, and treetop views<br> from a wraparoud window.</p>
+                    <div class="room-feats">
+                        <span><i class="fa-solid fa-user"></i> 4 Guests</span>
+                        <span><i class="fa-solid fa-bed"></i> 2 Queen Bed</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 40 M²</span>
+                    </div>
+                    <div class="room-footer">
+                        <div class="room-price">$259 <span>/ night</span></div>
+                        <a href="booking.html" class="room-select-btn" onclick="selectRoom('canopy',259,'Canopy Loft')">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
